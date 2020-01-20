@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>groupId</groupId>
+    <artifactId>webProject</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+
+    <!--
+If you are still getting errors after following the instructions provided by Shams UI Azeem, you may need to add
+the JSTL library to the WAR Exploded artifact. To do this:
+
+Go to Project Structure. Under Project Settings, select Artifacts. On the bottom of the menu box, there may be a
+message which mentions that the JSTL library used is not included in the WAR.
+
+2a. Message visible. If the message is displayed, there should be a Fix button next to it. Click this Fix button.
+Select "add javax.servlet:jstl:1.2 to the artifact".
+
+2b. Message not visible. If the message is not displayed, then look above to see if the javax.servet:jstl:1.2
+(Project Library) is underneath the Available Elements column. If it is, right click it and select "Put into /WEB-INF/lib".
+
+If you are working with Maven, the Fix message will not appear, though you will still need to do this.
+-->
+
+    <dependencies>
+    <!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
+    <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>jstl</artifactId>
+        <version>1.2</version>
+        <scope>application</scope>
+    </dependency>
+        <!-- https://mvnrepository.com/artifact/joda-time/joda-time -->
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>2.10.5</version>
+        </dependency>
+
+    </dependencies>
+</project>
